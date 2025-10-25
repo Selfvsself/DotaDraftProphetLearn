@@ -1,8 +1,10 @@
 import ast
-import csv
 import json
-from os import listdir
+import os
 
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MinMaxScaler
 from tqdm import tqdm
 
 hero_id_to_index = {}
@@ -12,109 +14,98 @@ with open("docs/heroes_dict.json", "r") as file:
         hero_id_to_index[item['key']] = item['value']
 
 
-def parse_line_to_list(line: str) -> list[int]:
-    return list(map(int, ast.literal_eval(line)))
-
-
-def map_team(team_name: str, ids: list[int]) -> list[int]:
+def map_team(ids_line: str) -> list[int]:
     result = []
+    ids = list(map(int, ast.literal_eval(ids_line)))
     for hero_id in ids:
         if hero_id not in hero_id_to_index:
-            raise ValueError(f"Unknown hero id in {team_name}: {hero_id}")
+            raise ValueError(f"Unknown hero id: {hero_id}")
         result.append(hero_id_to_index[hero_id])
     return result
 
 
-def validate_and_map_heroes(
-        radiant_array: list[int],
-        dire_array: list[int]
-) -> tuple[list[int], list[int]]:
-    if len(radiant_array) != 5:
-        raise ValueError(f"Radiant team must have 5 heroes, got {len(radiant_array)}")
-    if len(dire_array) != 5:
-        raise ValueError(f"Dire team must have 5 heroes, got {len(dire_array)}")
-
-    combined = radiant_array + dire_array
-    if len(set(combined)) != len(combined):
-        raise ValueError("Radiant and Dire teams must have different heroes")
-
-    radiant = map_team("Radiant", radiant_array)
-    dire = map_team("Dire", dire_array)
-
-    return radiant, dire
-
-
-def normalize(value: float, min_value: float, max_value: float) -> float:
-    if max_value == min_value:
-        return 0.0
-
-    normalized = (value - min_value) / (max_value - min_value)
-    normalized = max(0, min(1, normalized))
-    return round(normalized, 2)
-
-
-def normalize_avg_rank_tier(rank_tier: float) -> float:
-    return normalize(rank_tier, 11, 75)
-
-
-def normalize_num_rank_tier(rank_tier: float) -> float:
-    return normalize(rank_tier, 1, 10)
-
-
-def normalize_duration(duration: float) -> float:
-    return normalize(duration, 362, 8176)
+def print_dataframe_info(label: str, dataframe: pd.DataFrame):
+    print(f"{label}:\n\tTotal records: {len(dataframe)}")
+    win_counts = dataframe['radiant_win'].value_counts()
+    print(f"\tRadiant win records: {win_counts[1]}")
+    print(f"\tDire win records: {win_counts[0]}")
 
 
 dir_path = 'data/'
 allow_game_types = ['1', '2', '16', '22']
+allowed_columns = ['match_id', 'radiant_win', 'game_mode', 'avg_rank_tier', 'num_rank_tier', 'duration', 'radiant_team', 'dire_team']
+columns_to_normalize = ['avg_rank_tier', 'num_rank_tier', 'duration']
+dataframes = []
 
-output_file = 'datasets/dataset.csv'
+output_dir = 'datasets/'
 
-count = 0
-r_win_count = 0
-d_win_count = 0
-with open(output_file, mode='w', newline='') as out_csv:
-    writer = csv.writer(out_csv)
-    writer.writerow(
-        ['match_id', 'result', 'avg_rank_tier', 'num_rank_tier', 'duration', 'radiant_vector', 'dire_vector'])
+csv_files = os.listdir(dir_path)
 
-    for file in tqdm(listdir(dir_path)):
-        with open(dir_path + file) as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                game_type = row['game_mode']
-                match_id = row['match_id']
-                radiant_win = row['radiant_win']
-                avg_rank_tier = int(row['avg_rank_tier'])
-                num_rank_tier = int(row['num_rank_tier'])
-                duration = int(row['duration'])
+for file in tqdm(csv_files):
+    df = pd.read_csv(os.path.join(dir_path, file))
 
-                if game_type in allow_game_types:
-                    if radiant_win == 'True':
-                        result = 1
-                        r_win_count += 1
-                    else:
-                        result = 0
-                        d_win_count += 1
+    # filter by game mode
+    df = df[df['game_mode'].astype(str).isin(allow_game_types)]
 
-                    try:
-                        radiant_array = parse_line_to_list(row['radiant_team'])
-                        dire_array = parse_line_to_list(row['dire_team'])
+    # filter by columns
+    df = df[allowed_columns]
 
-                        vector = validate_and_map_heroes(radiant_array, dire_array)
-                        writer.writerow([
-                            match_id,
-                            result,
-                            normalize_avg_rank_tier(avg_rank_tier),
-                            normalize_num_rank_tier(num_rank_tier),
-                            normalize_duration(duration),
-                            json.dumps(vector[0]),  # сохраняем как JSON-строку
-                            json.dumps(vector[1])
-                        ])
-                    except Exception as e:
-                        print(row, e)
-                        continue
-                    count += 1
-print(f'Всего записей: {count}')
-print(f'Побед: {r_win_count}')
-print(f'Поражений: {d_win_count}')
+    # change radiant_win to int
+    df['radiant_win'] = df['radiant_win'].astype(str).map({'True': 1, 'False': 0})
+
+    # heroes id to index
+    df['radiant_team'] = df['radiant_team'].apply(lambda s: map_team(s))
+    df['dire_team'] = df['dire_team'].apply(lambda s: map_team(s))
+
+    # check teams length and unique
+    df = df[df.apply(lambda row:
+                     len(row['radiant_team']) == 5 and
+                     len(row['dire_team']) == 5 and
+                     len(row['radiant_team'] + row['dire_team']) == 10,
+                     axis=1)]
+    dataframes.append(df)
+
+combined_df = pd.concat(dataframes, ignore_index=True)
+
+scaler = MinMaxScaler()
+combined_df[columns_to_normalize] = scaler.fit_transform(combined_df[columns_to_normalize])
+
+print_dataframe_info("Dataset before balancing", combined_df)
+
+# balance by radiant win
+radiant_df = combined_df[combined_df['radiant_win'] == 1]
+dire_df = combined_df[combined_df['radiant_win'] == 0]
+
+min_size = min(len(radiant_df), len(dire_df))
+
+radiant_sampled = radiant_df.sample(n=min_size, random_state=42)
+dire_sampled = dire_df.sample(n=min_size, random_state=42)
+
+balanced_df = pd.concat([radiant_sampled, dire_sampled], ignore_index=True)
+
+balanced_df = balanced_df.sample(frac=1, random_state=42).reset_index(drop=True)
+
+print_dataframe_info("Dataset after balancing", balanced_df)
+
+# split into train, validation, test
+train_df, temp_df = train_test_split(
+    balanced_df,
+    test_size=0.3,
+    stratify=balanced_df['radiant_win'],
+    random_state=42
+)
+
+val_df, test_df = train_test_split(
+    temp_df,
+    test_size=0.5,
+    stratify=temp_df['radiant_win'],
+    random_state=42
+)
+
+print_dataframe_info("Train data", train_df)
+print_dataframe_info("Validation data", val_df)
+print_dataframe_info("Test data", test_df)
+
+train_df.to_csv(os.path.join(output_dir, 'train.csv'), index=False)
+val_df.to_csv(os.path.join(output_dir, 'validation.csv'), index=False)
+test_df.to_csv(os.path.join(output_dir, 'test.csv'), index=False)
