@@ -7,8 +7,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 from tqdm import tqdm
 
+HEROES_DICT_FILE = "../docs/heroes_dict.json"
+INPUT_RAW_DATA_DIR = "../data/raw"
+OUTPUT_PROCESSED_DIR = '../data/processed'
+
 hero_id_to_index = {}
-with open("docs/heroes_dict.json", "r") as file:
+with open(HEROES_DICT_FILE, "r") as file:
     full_data = json.load(file)
     for item in full_data:
         hero_id_to_index[item['key']] = item['value']
@@ -31,42 +35,44 @@ def print_dataframe_info(label: str, dataframe: pd.DataFrame):
     print(f"\tDire win records: {win_counts[0]}")
 
 
-dir_path = 'data/'
 allow_game_types = ['1', '2', '16', '22']
-allowed_columns = ['match_id', 'radiant_win', 'game_mode', 'avg_rank_tier', 'num_rank_tier', 'duration', 'radiant_team', 'dire_team']
-columns_to_normalize = ['avg_rank_tier', 'num_rank_tier', 'duration']
+allowed_columns = ['match_id', 'radiant_win', 'game_mode', 'avg_rank_tier', 'duration', 'radiant_team',
+                   'dire_team']
+columns_to_normalize = ['avg_rank_tier', 'duration']
 dataframes = []
 
-output_dir = 'datasets/'
-
-csv_files = os.listdir(dir_path)
+csv_files = os.listdir(INPUT_RAW_DATA_DIR)
 
 for file in tqdm(csv_files):
-    df = pd.read_csv(os.path.join(dir_path, file))
-
-    # filter by game mode
-    df = df[df['game_mode'].astype(str).isin(allow_game_types)]
-
-    # filter by columns
-    df = df[allowed_columns]
-
-    # change radiant_win to int
-    df['radiant_win'] = df['radiant_win'].astype(str).map({'True': 1, 'False': 0})
-
-    # heroes id to index
-    df['radiant_team'] = df['radiant_team'].apply(lambda s: map_team(s))
-    df['dire_team'] = df['dire_team'].apply(lambda s: map_team(s))
-
-    # check teams length and unique
-    df = df[df.apply(lambda row:
-                     len(row['radiant_team']) == 5 and
-                     len(row['dire_team']) == 5 and
-                     len(row['radiant_team'] + row['dire_team']) == 10,
-                     axis=1)]
+    df = pd.read_csv(os.path.join(INPUT_RAW_DATA_DIR, file))
     dataframes.append(df)
 
 combined_df = pd.concat(dataframes, ignore_index=True)
 
+# filter by game mode
+combined_df = combined_df[combined_df['game_mode'].astype(str).isin(allow_game_types)]
+
+# filter by duration
+combined_df = combined_df.loc[(combined_df['duration'] > 1200) & (combined_df['duration'] < 6000)]
+
+# filter by columns
+combined_df = combined_df[allowed_columns]
+
+# change radiant_win to int
+combined_df['radiant_win'] = combined_df['radiant_win'].astype(str).map({'True': 1, 'False': 0})
+
+# heroes id to index
+combined_df['radiant_team'] = combined_df['radiant_team'].apply(lambda s: map_team(s))
+combined_df['dire_team'] = combined_df['dire_team'].apply(lambda s: map_team(s))
+
+# check teams length and unique
+combined_df = combined_df[combined_df.apply(lambda row:
+                                            len(row['radiant_team']) == 5 and
+                                            len(row['dire_team']) == 5 and
+                                            len(row['radiant_team'] + row['dire_team']) == 10,
+                                            axis=1)]
+
+# normalize
 scaler = MinMaxScaler()
 combined_df[columns_to_normalize] = scaler.fit_transform(combined_df[columns_to_normalize])
 
@@ -106,6 +112,6 @@ print_dataframe_info("Train data", train_df)
 print_dataframe_info("Validation data", val_df)
 print_dataframe_info("Test data", test_df)
 
-train_df.to_parquet(os.path.join(output_dir, 'train.parquet'), index=False)
-val_df.to_parquet(os.path.join(output_dir, 'validation.parquet'), index=False)
-test_df.to_parquet(os.path.join(output_dir, 'test.parquet'), index=False)
+train_df.to_parquet(os.path.join(OUTPUT_PROCESSED_DIR, 'train.parquet'), index=False)
+val_df.to_parquet(os.path.join(OUTPUT_PROCESSED_DIR, 'validation.parquet'), index=False)
+test_df.to_parquet(os.path.join(OUTPUT_PROCESSED_DIR, 'test.parquet'), index=False)

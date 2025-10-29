@@ -8,7 +8,7 @@ BASE_URL = "https://api.opendota.com/api/publicMatches?less_than_match_id={match
 COUNTER = 1
 ATTEMPT = 0
 MAX_ATTEMPT = 10
-OUTPUT_FILENAME = f"matches_{LAST_MATCH_ID}.csv"
+OUTPUT_FILENAME = f"../data/raw/matches_{LAST_MATCH_ID}.csv"
 
 fields = [
     "match_id",
