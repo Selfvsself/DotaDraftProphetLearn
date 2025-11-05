@@ -1,9 +1,18 @@
 import requests
 import csv
 import time
+import logging
 
 LAST_MATCH_ID = 8473111211
 BASE_URL = "https://api.opendota.com/api/publicMatches?less_than_match_id={match_id}"
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s",
+    handlers=[
+        logging.StreamHandler()
+    ]
+)
 
 COUNTER = 1
 ATTEMPT = 0
@@ -29,26 +38,26 @@ with open(OUTPUT_FILENAME, "w", newline="", encoding="utf-8") as csvfile:
 
     while True:
         url = BASE_URL.format(match_id=LAST_MATCH_ID)
-        print(f"GET {url}")
+        logging.info(f"GET {url}")
 
         try:
             response = requests.get(url, timeout=20)
         except requests.RequestException as e:
-            print(f"Exception: {e}, attempt №{ATTEMPT + 1}")
+            logging.info(f"Exception: {e}, attempt №{ATTEMPT + 1}")
             if ATTEMPT >= MAX_ATTEMPT:
-                print("Retries exceeded, exiting.")
+                logging.info("Retries exceeded, exiting.")
                 break
             ATTEMPT += 1
             continue
         ATTEMPT = 0
 
         if response.status_code != 200:
-            print(f"Response code {response.status_code}, exiting.")
+            logging.info(f"Response code {response.status_code}, exiting.")
             break
 
         data = response.json()
         if not data:
-            print("Empty response, exiting.")
+            logging.info("Empty response, exiting.")
             break
 
         for item in data:
@@ -56,9 +65,9 @@ with open(OUTPUT_FILENAME, "w", newline="", encoding="utf-8") as csvfile:
             writer.writerow(row)
 
         LAST_MATCH_ID = data[-1].get("match_id")
-        print(f"Processed {len(data) * COUNTER} records, next match_id = {LAST_MATCH_ID}")
+        logging.info(f"Processed {len(data) * COUNTER} records, next match_id = {LAST_MATCH_ID}")
 
         time.sleep(10)
         COUNTER += 1
 
-print(f"Records saved to {OUTPUT_FILENAME}")
+logging.info(f"Records saved to {OUTPUT_FILENAME}")
