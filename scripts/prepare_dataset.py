@@ -9,11 +9,17 @@ from sklearn.preprocessing import MinMaxScaler
 from tqdm import tqdm
 
 HEROES_DICT_FILE = "../docs/heroes_data.json"
-INPUT_RAW_DATA_DIR = "../data/raw"
-OUTPUT_PROCESSED_DIR = '../data/processed'
+DATA_FOLDER = '../data'
+INPUT_RAW_DATA_DIR = os.path.join(DATA_FOLDER, "raw")
+OUTPUT_PROCESSED_DIR = os.path.join(DATA_FOLDER, "processed")
 OUTPUT_TRAIN_DATA_DIR = os.path.join(OUTPUT_PROCESSED_DIR, 'train.parquet')
 OUTPUT_VAL_DATA_DIR = os.path.join(OUTPUT_PROCESSED_DIR, 'validation.parquet')
 OUTPUT_TEST_DATA_DIR = os.path.join(OUTPUT_PROCESSED_DIR, 'test.parquet')
+
+if not os.path.exists(DATA_FOLDER):
+    os.makedirs(DATA_FOLDER)
+if not os.path.exists(OUTPUT_PROCESSED_DIR):
+    os.makedirs(OUTPUT_PROCESSED_DIR)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -47,7 +53,6 @@ allowed_columns = [
     'dire_team']
 columns_to_normalize = ['avg_rank_tier', 'duration']
 dataframes = []
-
 csv_files = os.listdir(INPUT_RAW_DATA_DIR)
 
 for file in tqdm(csv_files, desc='Reading CSV files'):
@@ -105,7 +110,8 @@ logging.info('Added to dire heroes attack_type')
 combined_df['radiant_roles'] = combined_df['radiant_team'].apply(
     lambda team: [heroes_data[hero]['roles'] for hero in team])
 logging.info('Added to radiant heroes roles')
-combined_df['dire_roles'] = combined_df['dire_team'].apply(lambda team: [heroes_data[hero]['roles'] for hero in team])
+combined_df['dire_roles'] = combined_df['dire_team'].apply(
+    lambda team: [heroes_data[hero]['roles'] for hero in team])
 logging.info('Added to dire heroes roles')
 
 # add heroes winrate
@@ -128,7 +134,8 @@ logging.info('Added to dire heroes pickrate')
 combined_df['radiant_team'] = combined_df['radiant_team'].apply(
     lambda team: [heroes_data[hero]['index'] for hero in team])
 logging.info('Replaced radiant heroes ids to indexes')
-combined_df['dire_team'] = combined_df['dire_team'].apply(lambda team: [heroes_data[hero]['index'] for hero in team])
+combined_df['dire_team'] = combined_df['dire_team'].apply(
+    lambda team: [heroes_data[hero]['index'] for hero in team])
 logging.info('Replaced dire heroes ids to indexes')
 
 # normalize
@@ -177,3 +184,6 @@ val_df.to_parquet(OUTPUT_VAL_DATA_DIR, index=False)
 logging.info('Validation data saved to {}'.format(OUTPUT_VAL_DATA_DIR))
 test_df.to_parquet(OUTPUT_TEST_DATA_DIR, index=False)
 logging.info('Test data saved to {}'.format(OUTPUT_TEST_DATA_DIR))
+
+# example final data
+logging.info(train_df.head())
