@@ -3,11 +3,12 @@ import torch.nn as nn
 
 
 class DotaModel(nn.Module):
-    def __init__(self, num_heroes, emb_dim=128, dropout_p=0.5):
+    def __init__(self, num_heroes=127, emb_dim=64, dropout_p=0.3):
         super(DotaModel, self).__init__()
         self.hero_emb = nn.Embedding(
             num_embeddings=num_heroes,
-            embedding_dim=emb_dim
+            embedding_dim=emb_dim,
+            padding_idx=0
         )
         self.fc = nn.Sequential(
             nn.Linear(2 * emb_dim + 2, 1024),
