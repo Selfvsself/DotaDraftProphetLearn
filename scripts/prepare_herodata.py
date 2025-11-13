@@ -93,10 +93,10 @@ df["pickrate"] = df["pub_pick"] / total_picks
 if not os.path.exists('scalers'):
     os.makedirs('scalers')
 
-winrate_scaler = MinMaxScaler(feature_range=(-1, 1))
+winrate_scaler = MinMaxScaler(feature_range=(0, 1))
 df["winrate_scaled"] = winrate_scaler.fit_transform(df[["winrate"]])
 
-pickrate_scaler = MinMaxScaler(feature_range=(-1, 1))
+pickrate_scaler = MinMaxScaler(feature_range=(0, 1))
 df["pickrate_scaled"] = pickrate_scaler.fit_transform(df[["pickrate"]])
 
 df.to_json(OUTPUT_FILE, orient="records", indent=4)
