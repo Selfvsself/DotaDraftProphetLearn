@@ -19,8 +19,8 @@
         "pub_win":297877,
         "winrate":0.5149767992,
         "pickrate":0.0159851971,
-        "winrate_scaled":0.4643692785,
-        "pickrate_scaled":0.2217961824
+        "winrate_scaled":0.7321846393,
+        "pickrate_scaled":0.6108980912
     },
     {
         "id":2,
@@ -42,8 +42,8 @@
         "pub_win":343575,
         "winrate":0.5188645765,
         "pickrate":0.0182993734,
-        "winrate_scaled":0.5361978838,
-        "pickrate_scaled":0.4064872006
+        "winrate_scaled":0.7680989419,
+        "pickrate_scaled":0.7032436003
     },
     {
         "id":3,
@@ -65,8 +65,8 @@
         "pub_win":46402,
         "winrate":0.4925693177,
         "pickrate":0.0026033828,
-        "winrate_scaled":0.0503799904,
-        "pickrate_scaled":-0.8461867598
+        "winrate_scaled":0.5251899952,
+        "pickrate_scaled":0.0769066201
     },
     {
         "id":4,
@@ -88,8 +88,8 @@
         "pub_win":60934,
         "winrate":0.487698292,
         "pickrate":0.0034528455,
-        "winrate_scaled":-0.0396146141,
-        "pickrate_scaled":-0.7783923926
+        "winrate_scaled":0.4801926929,
+        "pickrate_scaled":0.1108038037
     },
     {
         "id":5,
@@ -111,8 +111,8 @@
         "pub_win":176360,
         "winrate":0.4928404556,
         "pickrate":0.0098892288,
-        "winrate_scaled":0.0553893982,
-        "pickrate_scaled":-0.2647140883
+        "winrate_scaled":0.5276946991,
+        "pickrate_scaled":0.3676429558
     },
     {
         "id":6,
@@ -134,8 +134,8 @@
         "pub_win":188429,
         "winrate":0.5024558952,
         "pickrate":0.0103637871,
-        "winrate_scaled":0.2330393937,
-        "pickrate_scaled":-0.226840288
+        "winrate_scaled":0.6165196969,
+        "pickrate_scaled":0.386579856
     },
     {
         "id":7,
@@ -157,8 +157,8 @@
         "pub_win":421583,
         "winrate":0.4956225687,
         "pickrate":0.0235071892,
-        "winrate_scaled":0.1067903108,
-        "pickrate_scaled":0.8221153263
+        "winrate_scaled":0.5533951554,
+        "pickrate_scaled":0.9110576631
     },
     {
         "id":8,
@@ -181,7 +181,7 @@
         "winrate":0.5439682148,
         "pickrate":0.0224943449,
         "winrate_scaled":1.0,
-        "pickrate_scaled":0.7412817145
+        "pickrate_scaled":0.8706408573
     },
     {
         "id":9,
@@ -203,8 +203,8 @@
         "pub_win":103545,
         "winrate":0.5053342053,
         "pickrate":0.0056626422,
-        "winrate_scaled":0.2862175939,
-        "pickrate_scaled":-0.6020317578
+        "winrate_scaled":0.6431087969,
+        "pickrate_scaled":0.1989841211
     },
     {
         "id":10,
@@ -226,8 +226,8 @@
         "pub_win":89302,
         "winrate":0.4394956494,
         "pickrate":0.0056153301,
-        "winrate_scaled":-0.9301822424,
-        "pickrate_scaled":-0.6058076689
+        "winrate_scaled":0.0349088788,
+        "pickrate_scaled":0.1970961655
     },
     {
         "id":11,
@@ -249,8 +249,8 @@
         "pub_win":254846,
         "winrate":0.4783343156,
         "pickrate":0.0147236325,
-        "winrate_scaled":-0.2126187029,
-        "pickrate_scaled":0.1211125705
+        "winrate_scaled":0.3936906485,
+        "pickrate_scaled":0.5605562852
     },
     {
         "id":12,
@@ -272,8 +272,8 @@
         "pub_win":142404,
         "winrate":0.5110625424,
         "pickrate":0.0077004627,
-        "winrate_scaled":0.3920514511,
-        "pickrate_scaled":-0.4393962953
+        "winrate_scaled":0.6960257255,
+        "pickrate_scaled":0.2803018523
     },
     {
         "id":13,
@@ -295,8 +295,8 @@
         "pub_win":130830,
         "winrate":0.4839121316,
         "pickrate":0.0074715295,
-        "winrate_scaled":-0.1095657967,
-        "pickrate_scaled":-0.4576671177
+        "winrate_scaled":0.4452171016,
+        "pickrate_scaled":0.2711664411
     },
     {
         "id":14,
@@ -318,7 +318,7 @@
         "pub_win":483747,
         "winrate":0.519450941,
         "pickrate":0.0257360821,
-        "winrate_scaled":0.5470312578,
+        "winrate_scaled":0.7735156289,
         "pickrate_scaled":1.0
     },
     {
@@ -341,8 +341,8 @@
         "pub_win":101267,
         "winrate":0.4975507417,
         "pickrate":0.0056246986,
-        "winrate_scaled":0.1424142591,
-        "pickrate_scaled":-0.6050599856
+        "winrate_scaled":0.5712071296,
+        "pickrate_scaled":0.1974700072
     },
     {
         "id":16,
@@ -364,8 +364,8 @@
         "pub_win":149462,
         "winrate":0.5087254124,
         "pickrate":0.0081192524,
-        "winrate_scaled":0.348871821,
-        "pickrate_scaled":-0.4059733062
+        "winrate_scaled":0.6744359105,
+        "pickrate_scaled":0.2970133469
     },
     {
         "id":17,
@@ -387,8 +387,8 @@
         "pub_win":124250,
         "winrate":0.4835891069,
         "pickrate":0.0071004942,
-        "winrate_scaled":-0.1155338387,
-        "pickrate_scaled":-0.4872789068
+        "winrate_scaled":0.4422330806,
+        "pickrate_scaled":0.2563605466
     },
     {
         "id":18,
@@ -410,8 +410,8 @@
         "pub_win":180351,
         "winrate":0.4775726153,
         "pickrate":0.0104363305,
-        "winrate_scaled":-0.226691493,
-        "pickrate_scaled":-0.2210507046
+        "winrate_scaled":0.3866542535,
+        "pickrate_scaled":0.3894746477
     },
     {
         "id":19,
@@ -433,8 +433,8 @@
         "pub_win":80422,
         "winrate":0.4498881181,
         "pickrate":0.0049401375,
-        "winrate_scaled":-0.7381762502,
-        "pickrate_scaled":-0.6596938027
+        "winrate_scaled":0.1309118749,
+        "pickrate_scaled":0.1701530986
     },
     {
         "id":20,
@@ -456,8 +456,8 @@
         "pub_win":187064,
         "winrate":0.5378694431,
         "pickrate":0.0096112977,
-        "winrate_scaled":0.8873221809,
-        "pickrate_scaled":-0.2868953607
+        "winrate_scaled":0.9436610904,
+        "pickrate_scaled":0.3565523196
     },
     {
         "id":21,
@@ -479,8 +479,8 @@
         "pub_win":235905,
         "winrate":0.4931681252,
         "pickrate":0.0132193723,
-        "winrate_scaled":0.0614432549,
-        "pickrate_scaled":0.0010597695
+        "winrate_scaled":0.5307216275,
+        "pickrate_scaled":0.5005298847
     },
     {
         "id":22,
@@ -502,8 +502,8 @@
         "pub_win":242958,
         "winrate":0.5030300897,
         "pickrate":0.0133476843,
-        "winrate_scaled":0.2436479207,
-        "pickrate_scaled":0.011300164
+        "winrate_scaled":0.6218239603,
+        "pickrate_scaled":0.505650082
     },
     {
         "id":23,
@@ -525,8 +525,8 @@
         "pub_win":75198,
         "winrate":0.4835511086,
         "pickrate":0.0042976653,
-        "winrate_scaled":-0.1162358759,
-        "pickrate_scaled":-0.7109685587
+        "winrate_scaled":0.441882062,
+        "pickrate_scaled":0.1445157206
     },
     {
         "id":25,
@@ -548,8 +548,8 @@
         "pub_win":156016,
         "winrate":0.4690799759,
         "pickrate":0.0091915961,
-        "winrate_scaled":-0.3835971987,
-        "pickrate_scaled":-0.3203911332
+        "winrate_scaled":0.3082014006,
+        "pickrate_scaled":0.3398044334
     },
     {
         "id":26,
@@ -571,8 +571,8 @@
         "pub_win":445353,
         "winrate":0.4963499826,
         "pickrate":0.0247961958,
-        "winrate_scaled":0.1202296428,
-        "pickrate_scaled":0.9249890549
+        "winrate_scaled":0.5601148214,
+        "pickrate_scaled":0.9624945275
     },
     {
         "id":27,
@@ -594,8 +594,8 @@
         "pub_win":259219,
         "winrate":0.5127860719,
         "pickrate":0.013970093,
-        "winrate_scaled":0.4238945102,
-        "pickrate_scaled":0.0609736866
+        "winrate_scaled":0.7119472551,
+        "pickrate_scaled":0.5304868433
     },
     {
         "id":28,
@@ -617,8 +617,8 @@
         "pub_win":190213,
         "winrate":0.5259020872,
         "pickrate":0.0099954877,
-        "winrate_scaled":0.6662193696,
-        "pickrate_scaled":-0.2562337271
+        "winrate_scaled":0.8331096848,
+        "pickrate_scaled":0.3718831364
     },
     {
         "id":29,
@@ -640,8 +640,8 @@
         "pub_win":102326,
         "winrate":0.4994777074,
         "pickrate":0.0056615921,
-        "winrate_scaled":0.1780159026,
-        "pickrate_scaled":-0.6021155689
+        "winrate_scaled":0.5890079513,
+        "pickrate_scaled":0.1989422155
     },
     {
         "id":30,
@@ -663,8 +663,8 @@
         "pub_win":344700,
         "winrate":0.5287231497,
         "pickrate":0.0180169654,
-        "winrate_scaled":0.7183398934,
-        "pickrate_scaled":0.3839486282
+        "winrate_scaled":0.8591699467,
+        "pickrate_scaled":0.6919743141
     },
     {
         "id":31,
@@ -686,8 +686,8 @@
         "pub_win":216355,
         "winrate":0.5325255181,
         "pickrate":0.0112278137,
-        "winrate_scaled":0.7885905267,
-        "pickrate_scaled":-0.157883593
+        "winrate_scaled":0.8942952634,
+        "pickrate_scaled":0.4210582035
     },
     {
         "id":32,
@@ -709,8 +709,8 @@
         "pub_win":85372,
         "winrate":0.4938423004,
         "pickrate":0.0047774468,
-        "winrate_scaled":0.0738989757,
-        "pickrate_scaled":-0.6726779084
+        "winrate_scaled":0.5369494878,
+        "pickrate_scaled":0.1636610458
     },
     {
         "id":33,
@@ -732,8 +732,8 @@
         "pub_win":57128,
         "winrate":0.5043746965,
         "pickrate":0.0031301447,
-        "winrate_scaled":0.2684901953,
-        "pickrate_scaled":-0.804146665
+        "winrate_scaled":0.6342450976,
+        "pickrate_scaled":0.0979266675
     },
     {
         "id":34,
@@ -755,8 +755,8 @@
         "pub_win":93262,
         "winrate":0.462923713,
         "pickrate":0.0055675482,
-        "winrate_scaled":-0.4973371965,
-        "pickrate_scaled":-0.6096210745
+        "winrate_scaled":0.2513314018,
+        "pickrate_scaled":0.1951894627
     },
     {
         "id":35,
@@ -778,8 +778,8 @@
         "pub_win":327543,
         "winrate":0.4800487167,
         "pickrate":0.0188560923,
-        "winrate_scaled":-0.1809442957,
-        "pickrate_scaled":0.4509181176
+        "winrate_scaled":0.4095278522,
+        "pickrate_scaled":0.7254590588
     },
     {
         "id":36,
@@ -801,8 +801,8 @@
         "pub_win":258423,
         "winrate":0.5232505872,
         "pickrate":0.0136486635,
-        "winrate_scaled":0.6172315982,
-        "pickrate_scaled":0.0353208697
+        "winrate_scaled":0.8086157991,
+        "pickrate_scaled":0.5176604349
     },
     {
         "id":37,
@@ -824,8 +824,8 @@
         "pub_win":125779,
         "winrate":0.5074250536,
         "pickrate":0.0068502263,
-        "winrate_scaled":0.3248470483,
-        "pickrate_scaled":-0.5072524181
+        "winrate_scaled":0.6624235241,
+        "pickrate_scaled":0.2463737909
     },
     {
         "id":38,
@@ -847,8 +847,8 @@
         "pub_win":56624,
         "winrate":0.4474472339,
         "pickrate":0.0034972558,
-        "winrate_scaled":-0.7832727926,
-        "pickrate_scaled":-0.7748480648
+        "winrate_scaled":0.1083636037,
+        "pickrate_scaled":0.1125759676
     },
     {
         "id":39,
@@ -870,8 +870,8 @@
         "pub_win":291584,
         "winrate":0.4967274833,
         "pickrate":0.0162223657,
-        "winrate_scaled":0.1272041553,
-        "pickrate_scaled":0.2407242603
+        "winrate_scaled":0.5636020776,
+        "pickrate_scaled":0.6203621302
     },
     {
         "id":40,
@@ -893,8 +893,8 @@
         "pub_win":266121,
         "winrate":0.5174471511,
         "pickrate":0.0142128716,
-        "winrate_scaled":0.5100102494,
-        "pickrate_scaled":0.0803494923
+        "winrate_scaled":0.7550051247,
+        "pickrate_scaled":0.5401747462
     },
     {
         "id":41,
@@ -916,8 +916,8 @@
         "pub_win":174784,
         "winrate":0.4855785526,
         "pickrate":0.0099474294,
-        "winrate_scaled":-0.078777847,
-        "pickrate_scaled":-0.2600691883
+        "winrate_scaled":0.4606110765,
+        "pickrate_scaled":0.3699654059
     },
     {
         "id":42,
@@ -939,8 +939,8 @@
         "pub_win":232065,
         "winrate":0.5384463677,
         "pickrate":0.0119106614,
-        "winrate_scaled":0.8979811475,
-        "pickrate_scaled":-0.1033865203
+        "winrate_scaled":0.9489905738,
+        "pickrate_scaled":0.4483067398
     },
     {
         "id":43,
@@ -962,8 +962,8 @@
         "pub_win":61572,
         "winrate":0.4824900284,
         "pickrate":0.0035266601,
-        "winrate_scaled":-0.1358398558,
-        "pickrate_scaled":-0.7725013537
+        "winrate_scaled":0.4320800721,
+        "pickrate_scaled":0.1137493232
     },
     {
         "id":44,
@@ -985,8 +985,8 @@
         "pub_win":219208,
         "winrate":0.4796726441,
         "pickrate":0.0126293249,
-        "winrate_scaled":-0.1878924226,
-        "pickrate_scaled":-0.0460310476
+        "winrate_scaled":0.4060537887,
+        "pickrate_scaled":0.4769844762
     },
     {
         "id":45,
@@ -1008,8 +1008,8 @@
         "pub_win":119285,
         "winrate":0.5020835087,
         "pickrate":0.0065656627,
-        "winrate_scaled":0.2261593692,
-        "pickrate_scaled":-0.5299630239
+        "winrate_scaled":0.6130796846,
+        "pickrate_scaled":0.2350184881
     },
     {
         "id":46,
@@ -1031,8 +1031,8 @@
         "pub_win":99283,
         "winrate":0.4722544617,
         "pickrate":0.0058098846,
-        "winrate_scaled":-0.3249470059,
-        "pickrate_scaled":-0.5902805577
+        "winrate_scaled":0.337526497,
+        "pickrate_scaled":0.2048597212
     },
     {
         "id":47,
@@ -1054,8 +1054,8 @@
         "pub_win":126751,
         "winrate":0.4946650744,
         "pickrate":0.0070812322,
-        "winrate_scaled":0.0891001311,
-        "pickrate_scaled":-0.4888161791
+        "winrate_scaled":0.5445500655,
+        "pickrate_scaled":0.2555919105
     },
     {
         "id":48,
@@ -1077,8 +1077,8 @@
         "pub_win":140059,
         "winrate":0.4965328247,
         "pickrate":0.0077952804,
-        "winrate_scaled":0.123607741,
-        "pickrate_scaled":-0.4318290342
+        "winrate_scaled":0.5618038705,
+        "pickrate_scaled":0.2840854829
     },
     {
         "id":49,
@@ -1100,8 +1100,8 @@
         "pub_win":147634,
         "winrate":0.5054556784,
         "pickrate":0.0080718298,
-        "winrate_scaled":0.2884618695,
-        "pickrate_scaled":-0.4097580395
+        "winrate_scaled":0.6442309347,
+        "pickrate_scaled":0.2951209802
     },
     {
         "id":50,
@@ -1123,8 +1123,8 @@
         "pub_win":103647,
         "winrate":0.5210800973,
         "pickrate":0.0054969392,
-        "winrate_scaled":0.5771307261,
-        "pickrate_scaled":-0.615256269
+        "winrate_scaled":0.7885653631,
+        "pickrate_scaled":0.1923718655
     },
     {
         "id":51,
@@ -1146,8 +1146,8 @@
         "pub_win":94122,
         "winrate":0.5120557961,
         "pickrate":0.0050797524,
-        "winrate_scaled":0.4104023046,
-        "pickrate_scaled":-0.648551336
+        "winrate_scaled":0.7052011523,
+        "pickrate_scaled":0.175724332
     },
     {
         "id":52,
@@ -1169,8 +1169,8 @@
         "pub_win":106048,
         "winrate":0.5172442385,
         "pickrate":0.0056659861,
-        "winrate_scaled":0.5062613399,
-        "pickrate_scaled":-0.6017648856
+        "winrate_scaled":0.7531306699,
+        "pickrate_scaled":0.1991175572
     },
     {
         "id":53,
@@ -1192,8 +1192,8 @@
         "pub_win":296594,
         "winrate":0.4809021557,
         "pickrate":0.0170441098,
-        "winrate_scaled":-0.1651765895,
-        "pickrate_scaled":0.3063064553
+        "winrate_scaled":0.4174117053,
+        "pickrate_scaled":0.6531532277
     },
     {
         "id":54,
@@ -1215,8 +1215,8 @@
         "pub_win":183179,
         "winrate":0.5174007237,
         "pickrate":0.0097840202,
-        "winrate_scaled":0.5091524802,
-        "pickrate_scaled":-0.2731106384
+        "winrate_scaled":0.7545762401,
+        "pickrate_scaled":0.3634446808
     },
     {
         "id":55,
@@ -1238,8 +1238,8 @@
         "pub_win":28905,
         "winrate":0.4950333961,
         "pickrate":0.0016136419,
-        "winrate_scaled":0.0959050572,
-        "pickrate_scaled":-0.9251765272
+        "winrate_scaled":0.5479525286,
+        "pickrate_scaled":0.0374117364
     },
     {
         "id":56,
@@ -1261,8 +1261,8 @@
         "pub_win":80355,
         "winrate":0.518429389,
         "pickrate":0.004283433,
-        "winrate_scaled":0.5281575797,
-        "pickrate_scaled":-0.7121044198
+        "winrate_scaled":0.7640787899,
+        "pickrate_scaled":0.1439477901
     },
     {
         "id":57,
@@ -1284,8 +1284,8 @@
         "pub_win":50970,
         "winrate":0.515421175,
         "pickrate":0.0027328832,
-        "winrate_scaled":0.472579342,
-        "pickrate_scaled":-0.8358515264
+        "winrate_scaled":0.736289671,
+        "pickrate_scaled":0.0820742368
     },
     {
         "id":58,
@@ -1307,8 +1307,8 @@
         "pub_win":57097,
         "winrate":0.5007366741,
         "pickrate":0.0031511754,
-        "winrate_scaled":0.2012759344,
-        "pickrate_scaled":-0.8024682372
+        "winrate_scaled":0.6006379672,
+        "pickrate_scaled":0.0987658814
     },
     {
         "id":59,
@@ -1330,8 +1330,8 @@
         "pub_win":120751,
         "winrate":0.4910373714,
         "pickrate":0.0067958671,
-        "winrate_scaled":0.0220765267,
-        "pickrate_scaled":-0.5115907459
+        "winrate_scaled":0.5110382633,
+        "pickrate_scaled":0.244204627
     },
     {
         "id":60,
@@ -1353,8 +1353,8 @@
         "pub_win":82096,
         "winrate":0.5062997613,
         "pickrate":0.0044810827,
-        "winrate_scaled":0.3040567187,
-        "pickrate_scaled":-0.6963302864
+        "winrate_scaled":0.6520283593,
+        "pickrate_scaled":0.1518348568
     },
     {
         "id":61,
@@ -1376,8 +1376,8 @@
         "pub_win":56987,
         "winrate":0.5175084909,
         "pickrate":0.0030431755,
-        "winrate_scaled":0.5111435332,
-        "pickrate_scaled":-0.8110875484
+        "winrate_scaled":0.7555717666,
+        "pickrate_scaled":0.0944562258
     },
     {
         "id":62,
@@ -1399,8 +1399,8 @@
         "pub_win":88550,
         "winrate":0.4875134885,
         "pickrate":0.0050196174,
-        "winrate_scaled":-0.0430289499,
-        "pickrate_scaled":-0.6533506249
+        "winrate_scaled":0.478485525,
+        "pickrate_scaled":0.1733246876
     },
     {
         "id":63,
@@ -1422,8 +1422,8 @@
         "pub_win":188431,
         "winrate":0.4978309344,
         "pickrate":0.01046018,
-        "winrate_scaled":0.1475909587,
-        "pickrate_scaled":-0.2191473102
+        "winrate_scaled":0.5737954794,
+        "pickrate_scaled":0.3904263449
     },
     {
         "id":64,
@@ -1445,8 +1445,8 @@
         "pub_win":188466,
         "winrate":0.4805550456,
         "pickrate":0.0108382349,
-        "winrate_scaled":-0.1715896197,
-        "pickrate_scaled":-0.1889753099
+        "winrate_scaled":0.4142051902,
+        "pickrate_scaled":0.405512345
     },
     {
         "id":65,
@@ -1468,8 +1468,8 @@
         "pub_win":35931,
         "winrate":0.4499474053,
         "pickrate":0.0022068674,
-        "winrate_scaled":-0.7370808902,
-        "pickrate_scaled":-0.8778320712
+        "winrate_scaled":0.1314595549,
+        "pickrate_scaled":0.0610839644
     },
     {
         "id":66,
@@ -1491,8 +1491,8 @@
         "pub_win":11658,
         "winrate":0.4765174739,
         "pickrate":0.0006761046,
-        "winrate_scaled":-0.24618575,
-        "pickrate_scaled":-1.0
+        "winrate_scaled":0.376907125,
+        "pickrate_scaled":0.0
     },
     {
         "id":67,
@@ -1514,8 +1514,8 @@
         "pub_win":138736,
         "winrate":0.5128569105,
         "pickrate":0.0074758683,
-        "winrate_scaled":0.425203288,
-        "pickrate_scaled":-0.4573208455
+        "winrate_scaled":0.712601644,
+        "pickrate_scaled":0.2713395773
     },
     {
         "id":68,
@@ -1537,8 +1537,8 @@
         "pub_win":132944,
         "winrate":0.5061795143,
         "pickrate":0.0072582657,
-        "winrate_scaled":0.3018350957,
-        "pickrate_scaled":-0.4746873901
+        "winrate_scaled":0.6509175479,
+        "pickrate_scaled":0.262656305
     },
     {
         "id":69,
@@ -1560,8 +1560,8 @@
         "pub_win":52035,
         "winrate":0.438145198,
         "pickrate":0.0032820575,
-        "winrate_scaled":-0.9551325004,
-        "pickrate_scaled":-0.792022726
+        "winrate_scaled":0.0224337498,
+        "pickrate_scaled":0.103988637
     },
     {
         "id":70,
@@ -1583,8 +1583,8 @@
         "pub_win":264763,
         "winrate":0.5057178166,
         "pickrate":0.0144683073,
-        "winrate_scaled":0.2933050029,
-        "pickrate_scaled":0.1007354425
+        "winrate_scaled":0.6466525014,
+        "pickrate_scaled":0.5503677213
     },
     {
         "id":71,
@@ -1606,8 +1606,8 @@
         "pub_win":209680,
         "winrate":0.5102373548,
         "pickrate":0.0113567337,
-        "winrate_scaled":0.3768057025,
-        "pickrate_scaled":-0.1475946762
+        "winrate_scaled":0.6884028512,
+        "pickrate_scaled":0.4262026619
     },
     {
         "id":72,
@@ -1629,8 +1629,8 @@
         "pub_win":94300,
         "winrate":0.4795272868,
         "pickrate":0.0054345934,
-        "winrate_scaled":-0.1905779713,
-        "pickrate_scaled":-0.6202320024
+        "winrate_scaled":0.4047110144,
+        "pickrate_scaled":0.1898839988
     },
     {
         "id":73,
@@ -1652,8 +1652,8 @@
         "pub_win":101216,
         "winrate":0.506939262,
         "pickrate":0.0055177488,
-        "winrate_scaled":0.3158718103,
-        "pickrate_scaled":-0.6135954857
+        "winrate_scaled":0.6579359051,
+        "pickrate_scaled":0.1932022572
     },
     {
         "id":74,
@@ -1675,8 +1675,8 @@
         "pub_win":287387,
         "winrate":0.4897370399,
         "pickrate":0.0162170873,
-        "winrate_scaled":-0.0019477404,
-        "pickrate_scaled":0.2403029992
+        "winrate_scaled":0.4990261298,
+        "pickrate_scaled":0.6201514996
     },
     {
         "id":75,
@@ -1698,8 +1698,8 @@
         "pub_win":277200,
         "winrate":0.5119170296,
         "pickrate":0.0149645043,
-        "winrate_scaled":0.4078385233,
-        "pickrate_scaled":0.1403361928
+        "winrate_scaled":0.7039192617,
+        "pickrate_scaled":0.5701680964
     },
     {
         "id":76,
@@ -1721,8 +1721,8 @@
         "pub_win":116514,
         "winrate":0.5160647373,
         "pickrate":0.0062393969,
-        "winrate_scaled":0.4844694726,
-        "pickrate_scaled":-0.556001813
+        "winrate_scaled":0.7422347363,
+        "pickrate_scaled":0.2219990935
     },
     {
         "id":77,
@@ -1744,8 +1744,8 @@
         "pub_win":36001,
         "winrate":0.4992788395,
         "pickrate":0.0019926916,
-        "winrate_scaled":0.17434172,
-        "pickrate_scaled":-0.8949251269
+        "winrate_scaled":0.58717086,
+        "pickrate_scaled":0.0525374365
     },
     {
         "id":78,
@@ -1767,8 +1767,8 @@
         "pub_win":23184,
         "winrate":0.4990850968,
         "pickrate":0.0012837559,
-        "winrate_scaled":0.1707622276,
-        "pickrate_scaled":-0.951504244
+        "winrate_scaled":0.5853811138,
+        "pickrate_scaled":0.024247878
     },
     {
         "id":79,
@@ -1790,8 +1790,8 @@
         "pub_win":49984,
         "winrate":0.4815043157,
         "pickrate":0.002868795,
-        "winrate_scaled":-0.1540513863,
-        "pickrate_scaled":-0.8250046041
+        "winrate_scaled":0.4229743068,
+        "pickrate_scaled":0.087497698
     },
     {
         "id":80,
@@ -1813,8 +1813,8 @@
         "pub_win":37538,
         "winrate":0.5146280607,
         "pickrate":0.002015795,
-        "winrate_scaled":0.4579261619,
-        "pickrate_scaled":-0.8930812824
+        "winrate_scaled":0.7289630809,
+        "pickrate_scaled":0.0534593588
     },
     {
         "id":81,
@@ -1836,8 +1836,8 @@
         "pub_win":90827,
         "winrate":0.5171055253,
         "pickrate":0.0048540526,
-        "winrate_scaled":0.5036985458,
-        "pickrate_scaled":-0.6665641083
+        "winrate_scaled":0.7518492729,
+        "pickrate_scaled":0.1667179458
     },
     {
         "id":82,
@@ -1859,8 +1859,8 @@
         "pub_win":45729,
         "winrate":0.5366497676,
         "pickrate":0.0023548836,
-        "winrate_scaled":0.8647880747,
-        "pickrate_scaled":-0.8660191156
+        "winrate_scaled":0.9323940374,
+        "pickrate_scaled":0.0669904422
     },
     {
         "id":83,
@@ -1882,8 +1882,8 @@
         "pub_win":67577,
         "winrate":0.5016033016,
         "pickrate":0.0037231215,
-        "winrate_scaled":0.2172873059,
-        "pickrate_scaled":-0.7568220591
+        "winrate_scaled":0.6086436529,
+        "pickrate_scaled":0.1215889705
     },
     {
         "id":84,
@@ -1905,8 +1905,8 @@
         "pub_win":320063,
         "winrate":0.5073624407,
         "pickrate":0.0174335505,
-        "winrate_scaled":0.3236902447,
-        "pickrate_scaled":0.3373871445
+        "winrate_scaled":0.6618451224,
+        "pickrate_scaled":0.6686935722
     },
     {
         "id":85,
@@ -1928,8 +1928,8 @@
         "pub_win":163021,
         "winrate":0.5090985744,
         "pickrate":0.0088493293,
-        "winrate_scaled":0.3557661723,
-        "pickrate_scaled":-0.347706939
+        "winrate_scaled":0.6778830862,
+        "pickrate_scaled":0.3261465305
     },
     {
         "id":86,
@@ -1951,8 +1951,8 @@
         "pub_win":288287,
         "winrate":0.4768171721,
         "pickrate":0.0167086691,
-        "winrate_scaled":-0.2406486776,
-        "pickrate_scaled":0.2795354218
+        "winrate_scaled":0.3796756612,
+        "pickrate_scaled":0.6397677109
     },
     {
         "id":87,
@@ -1974,8 +1974,8 @@
         "pub_win":155047,
         "winrate":0.5027170917,
         "pickrate":0.0085233123,
-        "winrate_scaled":0.2378651285,
-        "pickrate_scaled":-0.3737258781
+        "winrate_scaled":0.6189325643,
+        "pickrate_scaled":0.3131370609
     },
     {
         "id":88,
@@ -1997,8 +1997,8 @@
         "pub_win":127319,
         "winrate":0.5203724215,
         "pickrate":0.0067615713,
-        "winrate_scaled":0.5640560659,
-        "pickrate_scaled":-0.5143278404
+        "winrate_scaled":0.782028033,
+        "pickrate_scaled":0.2428360798
     },
     {
         "id":89,
@@ -2020,8 +2020,8 @@
         "pub_win":25346,
         "winrate":0.480583997,
         "pickrate":0.0014575008,
-        "winrate_scaled":-0.1710547287,
-        "pickrate_scaled":-0.9376379161
+        "winrate_scaled":0.4144726357,
+        "pickrate_scaled":0.0311810419
     },
     {
         "id":90,
@@ -2043,8 +2043,8 @@
         "pub_win":39060,
         "winrate":0.46981561,
         "pickrate":0.002297595,
-        "winrate_scaled":-0.3700059962,
-        "pickrate_scaled":-0.8705912323
+        "winrate_scaled":0.3149970019,
+        "pickrate_scaled":0.0647043839
     },
     {
         "id":91,
@@ -2066,8 +2066,8 @@
         "pub_win":48861,
         "winrate":0.4958041177,
         "pickrate":0.0027234594,
-        "winrate_scaled":0.1101445198,
-        "pickrate_scaled":-0.8366036209
+        "winrate_scaled":0.5550722599,
+        "pickrate_scaled":0.0816981896
     },
     {
         "id":92,
@@ -2089,8 +2089,8 @@
         "pub_win":25431,
         "winrate":0.5056568509,
         "pickrate":0.0013898766,
-        "winrate_scaled":0.2921786301,
-        "pickrate_scaled":-0.9430349106
+        "winrate_scaled":0.646089315,
+        "pickrate_scaled":0.0284825447
     },
     {
         "id":93,
@@ -2112,8 +2112,8 @@
         "pub_win":155244,
         "winrate":0.4793301161,
         "pickrate":0.0089505309,
-        "winrate_scaled":-0.1942207977,
-        "pickrate_scaled":-0.3396301945
+        "winrate_scaled":0.4028896012,
+        "pickrate_scaled":0.3301849028
     },
     {
         "id":94,
@@ -2135,8 +2135,8 @@
         "pub_win":158225,
         "winrate":0.5029674204,
         "pickrate":0.0086936857,
-        "winrate_scaled":0.2424900735,
-        "pickrate_scaled":-0.360128628
+        "winrate_scaled":0.6212450367,
+        "pickrate_scaled":0.319935686
     },
     {
         "id":95,
@@ -2158,8 +2158,8 @@
         "pub_win":87242,
         "winrate":0.499808079,
         "pickrate":0.0048238193,
-        "winrate_scaled":0.1841196817,
-        "pickrate_scaled":-0.6689769861
+        "winrate_scaled":0.5920598408,
+        "pickrate_scaled":0.1655115069
     },
     {
         "id":96,
@@ -2181,8 +2181,8 @@
         "pub_win":138447,
         "winrate":0.5183611271,
         "pickrate":0.0073810783,
-        "winrate_scaled":0.5268964087,
-        "pickrate_scaled":-0.4648859011
+        "winrate_scaled":0.7634482044,
+        "pickrate_scaled":0.2675570495
     },
     {
         "id":97,
@@ -2204,8 +2204,8 @@
         "pub_win":200655,
         "winrate":0.4886384945,
         "pickrate":0.0113483049,
-        "winrate_scaled":-0.0222439096,
-        "pickrate_scaled":-0.1482673707
+        "winrate_scaled":0.4888780452,
+        "pickrate_scaled":0.4258663147
     },
     {
         "id":98,
@@ -2227,8 +2227,8 @@
         "pub_win":116360,
         "winrate":0.493385346,
         "pickrate":0.0065175767,
-        "winrate_scaled":0.0654565171,
-        "pickrate_scaled":-0.5338006906
+        "winrate_scaled":0.5327282585,
+        "pickrate_scaled":0.2330996547
     },
     {
         "id":99,
@@ -2250,8 +2250,8 @@
         "pub_win":94325,
         "winrate":0.4559097896,
         "pickrate":0.005717637,
-        "winrate_scaled":-0.6269228969,
-        "pickrate_scaled":-0.5976427022
+        "winrate_scaled":0.1865385515,
+        "pickrate_scaled":0.2011786489
     },
     {
         "id":100,
@@ -2273,8 +2273,8 @@
         "pub_win":83443,
         "winrate":0.4708813471,
         "pickrate":0.0048971917,
-        "winrate_scaled":-0.3503159764,
-        "pickrate_scaled":-0.6631212361
+        "winrate_scaled":0.3248420118,
+        "pickrate_scaled":0.168439382
     },
     {
         "id":101,
@@ -2296,8 +2296,8 @@
         "pub_win":236556,
         "winrate":0.5099167728,
         "pickrate":0.0128204526,
-        "winrate_scaled":0.3708827925,
-        "pickrate_scaled":-0.0307774253
+        "winrate_scaled":0.6854413962,
+        "pickrate_scaled":0.4846112874
     },
     {
         "id":102,
@@ -2319,8 +2319,8 @@
         "pub_win":133143,
         "winrate":0.5266336786,
         "pickrate":0.0069868014,
-        "winrate_scaled":0.6797358836,
-        "pickrate_scaled":-0.4963525625
+        "winrate_scaled":0.8398679418,
+        "pickrate_scaled":0.2518237188
     },
     {
         "id":103,
@@ -2342,8 +2342,8 @@
         "pub_win":22890,
         "winrate":0.4919195392,
         "pickrate":0.0012859391,
-        "winrate_scaled":0.0383750133,
-        "pickrate_scaled":-0.9513300051
+        "winrate_scaled":0.5191875067,
+        "pickrate_scaled":0.0243349974
     },
     {
         "id":104,
@@ -2365,8 +2365,8 @@
         "pub_win":334240,
         "winrate":0.527081027,
         "pickrate":0.017524665,
-        "winrate_scaled":0.6880008662,
-        "pickrate_scaled":0.3446588612
+        "winrate_scaled":0.8440004331,
+        "pickrate_scaled":0.6723294306
     },
     {
         "id":105,
@@ -2388,8 +2388,8 @@
         "pub_win":171825,
         "winrate":0.4854142654,
         "pickrate":0.0097823344,
-        "winrate_scaled":-0.0818131342,
-        "pickrate_scaled":-0.2732451773
+        "winrate_scaled":0.4590934329,
+        "pickrate_scaled":0.3633774114
     },
     {
         "id":106,
@@ -2411,8 +2411,8 @@
         "pub_win":75852,
         "winrate":0.4783412056,
         "pickrate":0.0043822579,
-        "winrate_scaled":-0.2124914064,
-        "pickrate_scaled":-0.7042173531
+        "winrate_scaled":0.3937542968,
+        "pickrate_scaled":0.1478913235
     },
     {
         "id":107,
@@ -2434,8 +2434,8 @@
         "pub_win":44938,
         "winrate":0.4894194012,
         "pickrate":0.0025374719,
-        "winrate_scaled":-0.0078162715,
-        "pickrate_scaled":-0.8514470099
+        "winrate_scaled":0.4960918642,
+        "pickrate_scaled":0.0742764951
     },
     {
         "id":108,
@@ -2457,8 +2457,8 @@
         "pub_win":58509,
         "winrate":0.4891484274,
         "pickrate":0.003305603,
-        "winrate_scaled":-0.0128226458,
-        "pickrate_scaled":-0.7901435927
+        "winrate_scaled":0.4935886771,
+        "pickrate_scaled":0.1049282037
     },
     {
         "id":109,
@@ -2480,8 +2480,8 @@
         "pub_win":78442,
         "winrate":0.4704111495,
         "pickrate":0.0046082893,
-        "winrate_scaled":-0.35900311,
-        "pickrate_scaled":-0.6861781141
+        "winrate_scaled":0.320498445,
+        "pickrate_scaled":0.156910943
     },
     {
         "id":110,
@@ -2503,8 +2503,8 @@
         "pub_win":79278,
         "winrate":0.4975773248,
         "pickrate":0.0044031227,
-        "winrate_scaled":0.1429053952,
-        "pickrate_scaled":-0.7025521586
+        "winrate_scaled":0.5714526976,
+        "pickrate_scaled":0.1487239207
     },
     {
         "id":111,
@@ -2526,8 +2526,8 @@
         "pub_win":91088,
         "winrate":0.5235544315,
         "pickrate":0.0048080393,
-        "winrate_scaled":0.6228452727,
-        "pickrate_scaled":-0.6702363584
+        "winrate_scaled":0.8114226364,
+        "pickrate_scaled":0.1648818208
     },
     {
         "id":112,
@@ -2549,8 +2549,8 @@
         "pub_win":69082,
         "winrate":0.5170498773,
         "pickrate":0.0036923354,
-        "winrate_scaled":0.5026704197,
-        "pickrate_scaled":-0.759279048
+        "winrate_scaled":0.7513352098,
+        "pickrate_scaled":0.120360476
     },
     {
         "id":113,
@@ -2572,8 +2572,8 @@
         "pub_win":49771,
         "winrate":0.4971134638,
         "pickrate":0.0027668749,
-        "winrate_scaled":0.1343353356,
-        "pickrate_scaled":-0.8331386931
+        "winrate_scaled":0.5671676678,
+        "pickrate_scaled":0.0834306535
     },
     {
         "id":114,
@@ -2595,8 +2595,8 @@
         "pub_win":96252,
         "winrate":0.4357167108,
         "pickrate":0.0061048392,
-        "winrate_scaled":-1.0,
-        "pickrate_scaled":-0.5667406631
+        "winrate_scaled":0.0,
+        "pickrate_scaled":0.2166296685
     },
     {
         "id":119,
@@ -2618,8 +2618,8 @@
         "pub_win":83907,
         "winrate":0.4837420872,
         "pickrate":0.004793503,
-        "winrate_scaled":-0.1127074512,
-        "pickrate_scaled":-0.6713964806
+        "winrate_scaled":0.4436462744,
+        "pickrate_scaled":0.1643017597
     },
     {
         "id":120,
@@ -2641,8 +2641,8 @@
         "pub_win":44409,
         "winrate":0.4513109756,
         "pickrate":0.0027193417,
-        "winrate_scaled":-0.7118882559,
-        "pickrate_scaled":-0.8369322486
+        "winrate_scaled":0.1440558721,
+        "pickrate_scaled":0.0815338757
     },
     {
         "id":121,
@@ -2664,8 +2664,8 @@
         "pub_win":70305,
         "winrate":0.4879174416,
         "pickrate":0.0039820669,
-        "winrate_scaled":-0.0355657165,
-        "pickrate_scaled":-0.7361560034
+        "winrate_scaled":0.4822171417,
+        "pickrate_scaled":0.1319219983
     },
     {
         "id":123,
@@ -2687,8 +2687,8 @@
         "pub_win":172511,
         "winrate":0.4809741545,
         "pickrate":0.0099120558,
-        "winrate_scaled":-0.1638463753,
-        "pickrate_scaled":-0.2628922994
+        "winrate_scaled":0.4180768124,
+        "pickrate_scaled":0.3685538503
     },
     {
         "id":126,
@@ -2710,8 +2710,8 @@
         "pub_win":85191,
         "winrate":0.5131307899,
         "pickrate":0.0045881153,
-        "winrate_scaled":0.4302633452,
-        "pickrate_scaled":-0.6877881696
+        "winrate_scaled":0.7151316726,
+        "pickrate_scaled":0.1561059152
     },
     {
         "id":128,
@@ -2733,8 +2733,8 @@
         "pub_win":215592,
         "winrate":0.4958919486,
         "pickrate":0.0120147371,
-        "winrate_scaled":0.1117672379,
-        "pickrate_scaled":-0.095080398
+        "winrate_scaled":0.555883619,
+        "pickrate_scaled":0.452459801
     },
     {
         "id":129,
@@ -2756,8 +2756,8 @@
         "pub_win":164903,
         "winrate":0.4706552235,
         "pickrate":0.0096826528,
-        "winrate_scaled":-0.3544937223,
-        "pickrate_scaled":-0.2812006162
+        "winrate_scaled":0.3227531388,
+        "pickrate_scaled":0.3593996919
     },
     {
         "id":131,
@@ -2779,8 +2779,8 @@
         "pub_win":49283,
         "winrate":0.4721588841,
         "pickrate":0.0028845473,
-        "winrate_scaled":-0.3267128508,
-        "pickrate_scaled":-0.8237474374
+        "winrate_scaled":0.3366435746,
+        "pickrate_scaled":0.0881262813
     },
     {
         "id":135,
@@ -2802,8 +2802,8 @@
         "pub_win":174181,
         "winrate":0.5161224369,
         "pickrate":0.0093264577,
-        "winrate_scaled":0.4855355008,
-        "pickrate_scaled":-0.309628022
+        "winrate_scaled":0.7427677504,
+        "pickrate_scaled":0.345185989
     },
     {
         "id":136,
@@ -2825,8 +2825,8 @@
         "pub_win":136529,
         "winrate":0.4889516811,
         "pickrate":0.0077166296,
-        "winrate_scaled":-0.0164576323,
-        "pickrate_scaled":-0.4381060453
+        "winrate_scaled":0.4917711839,
+        "pickrate_scaled":0.2809469773
     },
     {
         "id":137,
@@ -2848,8 +2848,8 @@
         "pub_win":54350,
         "winrate":0.4805226955,
         "pickrate":0.0031257507,
-        "winrate_scaled":-0.1721873031,
-        "pickrate_scaled":-0.8044973484
+        "winrate_scaled":0.4139063484,
+        "pickrate_scaled":0.0977513258
     },
     {
         "id":138,
@@ -2871,8 +2871,8 @@
         "pub_win":60470,
         "winrate":0.4879603628,
         "pickrate":0.0034247124,
-        "winrate_scaled":-0.0347727268,
-        "pickrate_scaled":-0.7806376482
+        "winrate_scaled":0.4826136366,
+        "pickrate_scaled":0.1096811759
     },
     {
         "id":145,
@@ -2894,7 +2894,7 @@
         "pub_win":57193,
         "winrate":0.4512410648,
         "pickrate":0.0035027001,
-        "winrate_scaled":-0.7131798925,
-        "pickrate_scaled":-0.7744135703
+        "winrate_scaled":0.1434100538,
+        "pickrate_scaled":0.1127932148
     }
 ]
