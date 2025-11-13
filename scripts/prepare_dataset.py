@@ -139,7 +139,7 @@ combined_df['dire_team'] = combined_df['dire_team'].apply(
 logging.info('Replaced dire heroes ids to indexes')
 
 # normalize
-scaler = MinMaxScaler()
+scaler = MinMaxScaler(feature_range=(0, 1))
 combined_df[columns_to_normalize] = scaler.fit_transform(combined_df[columns_to_normalize])
 logging.info('Columns {} normalized'.format(columns_to_normalize))
 
